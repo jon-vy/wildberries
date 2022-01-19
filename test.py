@@ -27,7 +27,14 @@ def pars_items():
         # return url_item_list
 
 def pars_item_data(url):
-    pass
+    # r = requests.get(url)
+    # src = r.text
+    # with open('data/item.html', 'w', encoding='utf-8') as f:
+    #     f.write(r.text)
+    with open('data/item.html', 'r', encoding='utf-8') as f:
+        src = f.read()
+        print(src)
+
 
 if __name__ == '__main__':
     url = 'https://www.wildberries.ru/catalog/40905699/detail.aspx'
